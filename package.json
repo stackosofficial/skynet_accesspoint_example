@@ -1,0 +1,31 @@
+{
+    "name": "ai-service-agent",
+    "version": "1.0.0",
+    "description": "AI Service Agent for multiple AI services",
+    "main": "dist/index.js",
+    "scripts": {
+        "start": "ts-node src/index.ts",
+        "build": "tsc",
+        "dev": "nodemon src/index.ts"
+    },
+    "dependencies": {
+        "@decloudlabs/skynet": "^0.5.5",
+        "@types/cors": "^2.8.17",
+        "axios": "^1.7.7",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.21.1",
+        "form-data": "^4.0.1"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.17",
+        "@types/form-data": "^2.2.1",
+        "@types/node": "^20.17.6",
+        "nodemon": "^3.1.7",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.6.3"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
