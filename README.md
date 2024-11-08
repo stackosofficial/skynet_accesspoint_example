@@ -103,3 +103,7 @@ All endpoints require these parameters:
   "files": [/* File array */]
 }
 ```
+
+## Example Implementation
+
+An example agent implementation is available at `src/index.ts`. This example demonstrates how to initialize the SDK and interact with the various service endpoints.
