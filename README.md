@@ -47,7 +47,7 @@ Get user auth payload using `await skynode.appManager.getUrsulaAuth()`
 
 ## Service Endpoints
 
-### 1. StackOS (Ethereum Explorer)
+### 1. StackAI (Ethereum Explorer)
 **POST** `https://stackaiservice.metalturtle.xyz/natural-request`
 ```json
 {
