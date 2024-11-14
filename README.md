@@ -96,7 +96,7 @@ const verifyBudget = async (appName: string, subnetId: string) => {
     };
     
     const verifyBudgetResponse = await getSubnetBalance(subnetId);
-    
+
     if (verifyBudgetResponse && Number(verifyBudgetResponse) < (Number(process.env.DEFAULT_RESOURCE_BUDGET!) * 0.5)) {
         await addBudget(subnetId);
         return true;
@@ -175,7 +175,8 @@ All endpoints require these parameters:
 }
 ```
 
-> **Tip**: Get auth payload using `await skynode.appManager.getUrsulaAuth()`
+## userAuthPayload 
+### Get user auth payload using `await skynode.appManager.getUrsulaAuth()`
 
 ## Service Endpoints
 
