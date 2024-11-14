@@ -42,7 +42,7 @@ All endpoints require these parameters:
 }
 ```
 
-> **Tip**: Get auth payload using `await skynode.appManager.getUrsulaAuth()`
+> **Tip**: Get user auth payload using `await skynode.appManager.getUrsulaAuth()`
 
 ## Service Endpoints
 
