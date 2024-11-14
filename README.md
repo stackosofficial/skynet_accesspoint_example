@@ -96,7 +96,7 @@ const verifyBudget = async (appName: string, subnetId: string) => {
     };
     
     const verifyBudgetResponse = await getSubnetBalance(subnetId);
-    console.log("verifyBudgetResponse", verifyBudgetResponse);
+    
     if (verifyBudgetResponse && Number(verifyBudgetResponse) < (Number(process.env.DEFAULT_RESOURCE_BUDGET!) * 0.5)) {
         await addBudget(subnetId);
         return true;
@@ -131,7 +131,7 @@ DEFAULT_RESOURCE_BUDGET= # Default budget amount in ETH
 Example usage:
 ```typescript
 // Before making API calls, verify budget
-await verifyBudget("MyApp", "subnet-123");
+await verifyBudget("MyApp", "4");
 ```
 
 > **Important**: 
