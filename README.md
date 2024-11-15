@@ -211,8 +211,7 @@ Get user auth payload using `await skynode.appManager.getUrsulaAuth()`
       "role": "user",
       "content": "Your prompt"
     }
-  ],
-  "model": "claude-3-5-sonnet-20241022"
+  ]
 }
 ```
 
