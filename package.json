@@ -9,7 +9,7 @@
         "dev": "nodemon src/index.ts"
     },
     "dependencies": {
-        "@decloudlabs/skynet": "^0.5.5",
+        "@decloudlabs/skynet": "^0.5.14",
         "@types/cors": "^2.8.17",
         "axios": "^1.7.7",
         "cors": "^2.8.5",

@@ -16,6 +16,12 @@ const initializeSkyNodeCrypto = async (): Promise<SkyMainNodeJS> => {
                 IPFS: {
                     PROJECT_ID: process.env.IPFS_PROJECT_ID!,
                     PROJECT_SECRET: process.env.IPFS_PROJECT_SECRET!
+                },
+                CLOUD: {
+                    BUCKET_NAME: process.env.CLOUD_BUCKET_NAME!,
+                    ACCESS_KEY_ID: process.env.CLOUD_ACCESS_KEY_ID!,
+                    SECRET_ACCESS_KEY: process.env.CLOUD_SECRET_ACCESS_KEY!,
+                    REGION: process.env.CLOUD_REGION!
                 }
             }
         };
