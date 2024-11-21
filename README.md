@@ -186,9 +186,11 @@ Get user auth payload using `await skynode.appManager.getUrsulaAuth()`
 {
   "userAuthPayload": { ... },
   "nftId": "YourNFTId",
-  "prompt": "Deploy alethio/ethereum-lite-explorer"
+  "prompt": "Deploy alethio/ethereum-lite-explorer with 1GB RAM and expose port 80"
 }
 ```
+Example prompts:
+- "Please deploy alethio/ethereum-lite-explorer with the tag as latest and port 80 with CPU as 128 core and 2000 mb ram and add a balance of 1 day"
 
 ### 2. RunPod (ML/AI Pods)
 **POST** `https://runpodservice-n694.stackos.io/natural-request`
@@ -196,9 +198,14 @@ Get user auth payload using `await skynode.appManager.getUrsulaAuth()`
 {
   "userAuthPayload": { ... },
   "nftId": "YourNFTId",
-  "prompt": "Create a new pod with config X"
+  "prompt": "Create a new pod with Stable Diffusion XL and 24GB GPU"
 }
 ```
+Example prompts:
+- "Please create a new pod with Stable Diffusion XL and 24GB GPU"
+- "Please stop the pod with ID 12345"
+- "Please start the pod with ID 12345"
+- "Please delete the pod with ID 12345"
 
 ### 3. Claude (AI Text)
 **POST** `https://claudeservice-n694.stackos.io/claude-3-5-sonnet-20241022/natural-request`
@@ -209,11 +216,15 @@ Get user auth payload using `await skynode.appManager.getUrsulaAuth()`
   "messages": [
     {
       "role": "user",
-      "content": "Your prompt"
+      "content": "Write a Python script to analyze sentiment from Twitter data"
     }
   ]
 }
 ```
+Example prompts:
+- "Explain how blockchain consensus works"
+- "Debug this React component code: [code]"
+- "Write a smart contract for NFT minting"
 
 ### 4. OpenAI (AI Text)
 **POST** `https://openapiservice-n244.stackos.io/natural-request/gpt-4-turbo/focused`
@@ -221,9 +232,13 @@ Get user auth payload using `await skynode.appManager.getUrsulaAuth()`
 {
   "userAuthPayload": { ... },
   "nftId": "YourNFTId",
-  "prompt": "Your prompt"
+  "prompt": "Create a TypeScript interface for a blockchain transaction"
 }
 ```
+Example prompts:
+- "Please generate unit tests for this function: [code]"
+- "Please optimize this SQL query for better performance"
+- "Please create an API specification for a DeFi protocol"
 
 ### 5. IPFS (File Storage)
 **POST** `https://lightservice-n694.stackos.io/natural-request`  
@@ -232,10 +247,14 @@ Get user auth payload using `await skynode.appManager.getUrsulaAuth()`
 {
   "userAuthPayload": { ... },
   "nftId": "YourNFTId",
-  "prompt": "Upload files",
+  "prompt": "Upload these images and make them publicly accessible",
   "files": [/* File array */]
 }
 ```
+Example prompts:
+- "Please upload these NFT images to IPFS"
+- "Please store this JSON metadata file with maximum redundancy"
+- "Please upload this folder to IPFS"
 
 ### 6. Fusion X (NFT Collection)
 **POST** `https://fxservice-n866.stackos.io/createCollection/natural-request`
@@ -243,10 +262,13 @@ Get user auth payload using `await skynode.appManager.getUrsulaAuth()`
 {
   "userAuthPayload": { ... },
   "nftId": "YourNFTId",
-  "prompt": "Your prompt",
+  "prompt": "Create an NFT collection named 'Cyber Punks' with 10,000 supply",
   "files": [/* File array */]
 }
 ```
+Example prompts:
+- "Please create a collection named 'Space Warriors' with 500 max supply with encryption"
+- "Please create a limited edition collection of 100 art pieces"
 
 ### 7. Fusion X (NFT Minting from Collection)
 **POST** `https://fxservice-n866.stackos.io/mintCollection/natural-request`
@@ -254,9 +276,13 @@ Get user auth payload using `await skynode.appManager.getUrsulaAuth()`
 {
   "userAuthPayload": { ... },
   "nftId": "YourNFTId",
-  "prompt": "Your prompt",
+  "prompt": "Mint 5 NFTs from collection 0x123... to address 0xabc..."
 }
 ```
+Example prompts:
+- "Please mint 10 tokens from my collection to this wallet"
+- "Please batch mint 50 NFTs to these addresses: [list]"
+- "Please mint the next available token ID to my address"
 
 ### 8. Fusion X (NFT Minting for file)
 **POST** `https://fxservice-n866.stackos.io/mintNft/natural-request`
@@ -264,10 +290,14 @@ Get user auth payload using `await skynode.appManager.getUrsulaAuth()`
 {
   "userAuthPayload": { ... },
   "nftId": "YourNFTId",
-  "prompt": "Your prompt",
+  "prompt": "Mint this artwork as an NFT with title 'Digital Dreams' and description",
   "files": [/* File array */]
 }
 ```
+Example prompts:
+- "Please mint this image as an NFT"
+- "Please create a new NFT with these metadata attributes"
+- "Please mint this video file as an NFT with unlockable content"
 
 ## Example Implementation
 
