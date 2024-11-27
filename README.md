@@ -213,12 +213,7 @@ Example prompts:
 {
   "userAuthPayload": { ... },
   "nftId": "YourNFTId",
-  "messages": [
-    {
-      "role": "user",
-      "content": "Write a Python script to analyze sentiment from Twitter data"
-    }
-  ]
+  "prompt": "Write a Python script to analyze sentiment from Twitter data"
 }
 ```
 Example prompts:
